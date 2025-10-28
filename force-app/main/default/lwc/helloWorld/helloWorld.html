@@ -1,0 +1,39 @@
+<template>
+    <!-- one way data binding -->
+   {a}
+   hello
+   {b}
+
+    <!-- two way data binding -->
+    <!-- <div class="slds-form-element">
+        <label class="slds-form-element__label" for="text-input-id-52">
+            <abbr class="slds-required" title="required" aria-hidden="true">* </abbr>Input Label</label>
+            <div class="slds-form-element__control">
+              <input type="text" id="text-input-id-52" placeholder="Placeholder text…" required="" class="slds-input" />
+             </div>
+    </div>
+
+
+
+    <div class="slds-form-element">
+        <label class="slds-form-element__label" for="text-input-id-48">Input Label</label>
+        <div class="slds-form-element__control">
+        <input type="text" id="text-input-id-48" placeholder="Placeholder text…" disabled="" class="slds-input" />
+        </div>
+        </div>
+
+        <lightning-input type="text" label="Enter some text"></lightning-input> -->
+
+
+
+        <lightning-input type="text" label="Enter some text" value={storeValue} onchange={handleChangeEvent}></lightning-input>
+        hello {storeValue}
+
+
+
+
+
+
+
+
+</template>
