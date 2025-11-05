@@ -1,0 +1,10 @@
+<template>
+    <lightning-button label = "toggle message" onclick={toggleMessage}></lightning-button>"
+    <template if:true={showMessage}>
+        <p>hello world</p>
+    </template>
+
+    <template if:false={showMessage}>
+        <p>hello universe</p>
+    </template>
+</template>
