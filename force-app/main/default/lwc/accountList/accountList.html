@@ -1,9 +1,23 @@
 <template>
     <lightning-card title="Account List" icon-name="standard:account">
         <div class="slds-m-around_medium">
-            <template if:true={accounts.data}>
-                {accounts.data}
+            <template if:true={accounts}>
+                <template for:each={accounts} for:item="i">
+                    <p key={i.Id}>{i.Name}</p>
+                </template>
             </template>
     </div>
     </lightning-card>
 </template>
+
+
+accounts = [{id = 3423423,name='abc',age=23},
+{id = 342342,name='abc',age=23},
+{id = 342323,name='abc',age=23},
+{id = 342343,name='abc',age=23},
+{id = 343423,name='abc',age=23}]
+
+i ={id = 342343,name='abc',age=23}
+
+
+for(i=0;i<n;i++)

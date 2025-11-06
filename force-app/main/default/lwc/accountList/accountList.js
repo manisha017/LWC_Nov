@@ -2,8 +2,19 @@ import getAccounts from '@salesforce/apex/accountController.getAccounts';
 import { LightningElement,wire } from 'lwc';
 
 export default class AccountList extends LightningElement {
+ accounts;
     @wire(getAccounts)
-    accounts;
+    accounts({data, error}){
+		if(data){
+            this.accounts =data
+	    console.log('fetched data' +data);
+   }
+   else 
+   {
+	    console.log('error')
+   }
+}
+
  
 
 
