@@ -33,4 +33,6 @@ export default class LifeCycleHooks extends LightningElement {
     // 1.if i am adding a child component what is the order of execution of life cycle hooks
     // 2.if i am removing a child component what is the order of execution of life cycle hooks
     // 3.why disconnectedCallback and errorcallback is not visible in console
+
+    
 }
